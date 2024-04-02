@@ -6,7 +6,7 @@ import boto3
 kinesis = boto3.client('kinesis', region_name='us-east-1')
 stream_name = "KP1DataStream"
 
-def generate_telemetry():
+def generate_telemetry1():
     while True:
         temperature = 20 + random.random() * 10
         wind = random.random() * 10
@@ -27,4 +27,4 @@ def generate_telemetry():
 
         time.sleep(0.5)
 
-generate_telemetry()
+generate_telemetry1()
